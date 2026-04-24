@@ -1,0 +1,27 @@
+package test;
+
+class Car{//설계도 class
+	String model;
+	int speed;
+	Car(String model, int speed){
+		this.model=model;
+		this.speed=speed;
+	}
+	
+	void print() {
+		System.out.println(model + "," + speed);
+	}
+	
+}
+
+public class Ex04 {
+	public static void main(String[] args) {
+		//객체 생성(생성자 호출)
+		Car c1 = new Car("sonata",100);
+		Car c2 = new Car("avante",120);
+				
+		c1.print();
+		c2.print();
+		
+	}
+}
